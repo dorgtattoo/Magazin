@@ -408,9 +408,10 @@ h2 {
     color: beige;
     font-size: larger;
     margin-top: 10px;
-    font-weight: bold ;
+    font-weight: bold;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.438), 0 0 20px beige;
 }
+
 .citySelector a:hover {
     background-image: linear-gradient(to bottom, beige, rgba(238, 221, 238, 0));
     opacity: 1;
@@ -452,13 +453,16 @@ h2 {
     vertical-align: middle;
     justify-content: flex-end;
 }
+
 .dropbtnCity p {
     margin-left: 10px;
     margin-bottom: 25px;
 }
+
 /* Start of content section */
 .mainSection {
     display: flex;
+    flex-direction: column;
     height: 800px;
     width: 850px;
     border: .3px solid rgb(109, 145, 125);
@@ -468,4 +472,61 @@ h2 {
     border-radius: 0 30px 30px 30px;
     box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.315);
 }
-.goodOne {}
+
+.mnSctHdr {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: beige;
+    text-shadow: 0 0 7px rgba(0, 0, 0, 0.514), 0 0 15px beige;
+    margin-top: 0%;
+    margin-left: 15px;
+}
+
+.mnSctHdr h1 {
+    margin-top: 10px;
+}
+
+.sepMain {
+    width: 850px;
+    border: .2px solid rgba(109, 145, 125, 0.219);
+}
+
+/* Goods section */
+.goodOne {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 320px;
+    width: 240px;
+    border: .3px solid beige;
+    border-radius: 30px;
+    margin: 30px;
+    box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.329);
+}
+
+.goodOne img {
+    height: 240px;
+    width: 240px;
+    border-radius: 30px 30px 0 0;
+}
+
+.goodOne p {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: beige;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    font-weight: bold;
+    font-size: x-large;
+    text-shadow: 0 0 7px rgba(0, 0, 0, 0.514), 0 0 15px beige;
+}
+
+.goodOne i {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: beige;
+    margin-top: 0%;
+    font-weight: bold;
+    font-size: large;
+    text-shadow: 0 0 7px rgba(0, 0, 0, 0.514), 0 0 15px beige;
+    padding: 5px;
+    border: .3px solid beige;
+    border-radius: 30px;
+}
