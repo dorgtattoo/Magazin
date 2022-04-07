@@ -4,8 +4,12 @@ body {
     display: flex;
     margin: 0%;
     background-image: linear-gradient(to left, rgb(169, 216, 175), rgb(136, 218, 211));
-    flex-direction: column;
+    flex-direction: row;
     background-attachment: fixed;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: space-between;
+    align-items: stretch;
 }
 
 .upperMenu {
@@ -22,6 +26,7 @@ nav {
     background-image: linear-gradient(to bottom, rgb(133, 139, 139), rgba(238, 238, 238, 0));
     position: relative;
     width: 100%;
+    backdrop-filter: blur(15px);
 }
 
 .rightButtons {
@@ -78,6 +83,7 @@ input {
     border: solid .5px beige;
     margin-right: 10px;
     background-color: rgba(240, 248, 255, 0.349);
+    backdrop-filter: blur(4px);
 }
 
 .submitButton {
@@ -271,6 +277,8 @@ nav ul li a {
     display: flex;
     flex-direction: row;
     align-items: center;
+    margin-top: 0%;
+    margin-bottom: 20px;
 }
 
 h2 {
@@ -279,11 +287,13 @@ h2 {
     font-weight: bold;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.438), 0 0 20px beige;
     font-style: italic;
-    font-size: 20px
+    font-size: 20px;
+    margin-top: 0%;
 }
 
 .numCode {
     font-size: xx-large;
+    margin-top: 0%;
 }
 
 .fa-map-marker {
@@ -383,40 +393,79 @@ h2 {
 /* City selection section */
 
 .citySelector {
-    display: flex;
-    position: absolute;
+    display: none;
+    position: relative;
     z-index: 1;
     height: 150px;
     backdrop-filter: blur(5px);
+    width: 100%;
 }
 
-.citySelector ul {
-    height: 80px;
-}
 
-.citySelector ul li {
-    list-style: none;
-}
-
-.citySelector ul li a {
+.citySelector a {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     text-decoration: none;
     color: beige;
+    font-size: larger;
+    margin-top: 10px;
+    font-weight: bold ;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.438), 0 0 20px beige;
+}
+.citySelector a:hover {
+    background-image: linear-gradient(to bottom, beige, rgba(238, 221, 238, 0));
+    opacity: 1;
+    transition: 0.3s;
+
 }
 
-.cityClick {
+.cityClck {
     height: 80px;
-    position: relative;
+    position: absolute;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
 }
 
 h2 {
     margin-bottom: 0%;
 }
 
-.cityClick:hover .citySelector {
+.cityClck:hover .citySelector {
     display: flex;
     flex-direction: column;
 }
 
-
+.dropbtnCity {
+    display: flex;
+    align-items: center;
+    color: beige;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    text-shadow: 0 0 7px rgba(0, 0, 0, 0.514), 0 0 15px beige;
+    background-color: rgba(240, 248, 255, 0);
+    border: 0ch;
+    margin: 0%;
+    padding: 0%;
+    width: 200px;
+    height: 55px;
+    vertical-align: middle;
+    justify-content: flex-end;
+}
+.dropbtnCity p {
+    margin-left: 10px;
+    margin-bottom: 25px;
+}
 /* Start of content section */
+.mainSection {
+    display: flex;
+    height: 800px;
+    width: 850px;
+    border: .3px solid rgb(109, 145, 125);
+    margin-left: 30px;
+    margin-right: 50px;
+    margin-bottom: 30px;
+    border-radius: 0 30px 30px 30px;
+    box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.315);
+}
+.goodOne {}
