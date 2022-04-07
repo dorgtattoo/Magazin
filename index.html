@@ -5,10 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Shop</title>
+    <title>webshop</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <script src="jquery.js"></script>
+    <script src="jquery.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
 </head>
 
 <body>
@@ -16,7 +17,7 @@
         <nav>
             <ul>
                 <li><a href="#">Main</a></li>
-                <div class="dropdown">
+                <div id="dropdown" class="dropdown">
                     <button class="dropbtn">
                         <p class="btnName"> Catalogue
                             <i class="fa fa-caret-down">
@@ -24,7 +25,7 @@
                         </p>
 
                     </button>
-                    <div class="dropdown-content">
+                    <div id="dropdown-content" class="dropdown-content">
                         <ul>
                             <li><a class="cat1" href="#">Home</a></li>
                             <li><a class="cat2" href="#"> Office</a></li>
@@ -100,8 +101,9 @@
                 <img src="images/good_one.jpg" alt="good_one">
                 <p>Vinage lamp</p>
                 <button class="byuBtn"><i>120$      BYU!</i></button>
-
             </div>
+            <div class="goodTwo"></div>
+            <div class="goodThree"></div>
         </div>
     </div>
 </body>

@@ -38,6 +38,7 @@ nav {
     justify-content: space-between;
     vertical-align: middle;
     align-items: center;
+    backdrop-filter: blur(15px);
 }
 
 .cartButton {
@@ -151,7 +152,7 @@ nav ul li a {
     position: absolute;
     z-index: 1;
     height: 150px;
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(15px);
 }
 
 .dropdown-content ul li a {
@@ -555,7 +556,7 @@ h2 {
     box-shadow: 0 0 15px beige;
     border: .3px solid rgb(119, 119, 106);
     border-radius: 30px;
-    z-index: 3;
+    transform: translateY(10px);
     opacity: 1;
     transition: .4s;
 }
