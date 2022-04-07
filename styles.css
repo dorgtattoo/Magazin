@@ -238,6 +238,7 @@ nav ul li a {
     display: inline-flex;
     flex-direction: row;
     justify-content: space-between;
+    width: 100%;
 }
 
 .fa-desktop {
@@ -401,7 +402,6 @@ h2 {
     width: 100%;
 }
 
-
 .citySelector a {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     text-decoration: none;
@@ -416,7 +416,6 @@ h2 {
     background-image: linear-gradient(to bottom, beige, rgba(238, 221, 238, 0));
     opacity: 1;
     transition: 0.3s;
-
 }
 
 .cityClck {
@@ -459,12 +458,14 @@ h2 {
     margin-bottom: 25px;
 }
 
+
 /* Start of content section */
+
 .mainSection {
     display: flex;
     flex-direction: column;
     height: 800px;
-    width: 850px;
+    width: 75%;
     border: .3px solid rgb(109, 145, 125);
     margin-left: 30px;
     margin-right: 50px;
@@ -490,12 +491,14 @@ h2 {
     border: .2px solid rgba(109, 145, 125, 0.219);
 }
 
+
 /* Goods section */
+
 .goodOne {
     display: flex;
     align-items: center;
     flex-direction: column;
-    height: 320px;
+    height: 340px;
     width: 240px;
     border: .3px solid beige;
     border-radius: 30px;
@@ -522,11 +525,37 @@ h2 {
 .goodOne i {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: beige;
-    margin-top: 0%;
+    margin-top: 20px;
     font-weight: bold;
     font-size: large;
     text-shadow: 0 0 7px rgba(0, 0, 0, 0.514), 0 0 15px beige;
     padding: 5px;
     border: .3px solid beige;
     border-radius: 30px;
+    z-index: 1;
+    opacity: 1;
+    transition: .4s;
+}
+
+.buyBtn {
+    padding: 5px;
+    border: .3px solid beige;
+    border-radius: 30px;
+}
+
+.goodOne button {
+    background-color: rgba(0, 0, 0, 0);
+    border: 0ch;
+    margin-top: 20px;
+}
+
+.goodOne i:hover {
+    color: rgb(119, 119, 106);
+    background-color: beige;
+    box-shadow: 0 0 15px beige;
+    border: .3px solid rgb(119, 119, 106);
+    border-radius: 30px;
+    z-index: 3;
+    opacity: 1;
+    transition: .4s;
 }
